@@ -34,7 +34,7 @@ jobs:
         uses: mikepenz/action-junit-report@v5
         if: ${{ !cancelled() }}
         with:
-          report_paths: 'target/surefire-reports/junitreports/TEST*.xml'
+          report_paths: 'modulo-4/mobileAutomation/target/surefire-reports/junitreports/TEST*.xml'
           check_name: 'Wikipedia BrowserStack Tests Results'
           summary: 'Wikipedia BrowserStack Tests Results'
           detailed_summary: true
@@ -42,6 +42,5 @@ jobs:
           check_retries: true
           include_passed: true
           skip_success_summary: false
-          fail_on_parse_error: false
           verbose_summary: true
           group_suite: true
